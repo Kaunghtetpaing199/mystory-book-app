@@ -43,7 +43,7 @@ app.set("view engine", "hbs");
 //Sessions
 app.use(
   session({
-    secret: process.env.cookieKey,
+    secret: "I am very handsome!",
     resave: false,
     saveUninitialized: false,
     store: new MongoStore({ mongooseConnection: mongoose.connection }),
